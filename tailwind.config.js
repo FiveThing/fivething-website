@@ -5,6 +5,15 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      colors: {
+        blob: {
+          ff9: "#FF9B21",
+          ff7: "#FF7E5F",
+          f98: "#F9813A",
+        },
+      },
+    },
     screens: {
       sm: "640px",
       md: "768px",
@@ -19,6 +28,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
+      trueGray: colors.trueGray,
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
