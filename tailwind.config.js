@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -180,6 +181,7 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
+      jura: ["Jura", "sans-serif"],
       sans: [
         "ui-sans-serif",
         "system-ui",
