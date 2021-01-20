@@ -17,7 +17,7 @@ const Landing = () => {
       <div>
         <p className="font-jura text-2xl">Student Developers from</p>
         <p className="font-jura text-2xl">Polytechnic University of the Philippines - Manila</p>
-        <p className="font-jura text-2xl">Delete mo nalang HAHAAH </p>
+        <p className="font-jura text-2xl">Delete mo nalang eto sample ulit</p>
       </div>      
     </div>
 
