@@ -3,9 +3,6 @@ import React from "react";
 import BlobsTeam from "../../assets/img/blobs-team.svg";
 
 const Team = () => {
-<<<<<<< HEAD
-  return <div className="h-screen flex items-center justify-center">Team </div>;
-=======
   return (
     <div className="h-screen flex items-center justify-center">
       <img
@@ -15,7 +12,6 @@ const Team = () => {
       />
     </div>
   );
->>>>>>> upstream/main
 };
 
 export default Team;
