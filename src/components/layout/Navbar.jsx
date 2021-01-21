@@ -6,7 +6,7 @@ import { Slant as Hamburger } from "hamburger-react";
 const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <nav className="w-full fixed top-0 z-50">
-      <div className="flex items-center justify-between p-5 -mx-48 transform scale-75">
+      <div className="flex items-center justify-between p-5 mx-10">
         <Logo
           className="h-24"
           onClick={() => window.fullpage_api.moveTo(1, 0)}
