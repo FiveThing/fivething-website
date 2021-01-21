@@ -9,6 +9,9 @@ import Landing from "./components/pages/Landing";
 import Projects from "./components/pages/Projects";
 import Team from "./components/pages/Team";
 import BurgerMenu from "./components/layout/BurgerMenu";
+
+import { BiUpArrow } from "react-icons/bi";
+
 import "./index.css";
 
 function App() {
@@ -41,10 +44,10 @@ function App() {
               <ContactUs />
             </div>
             <button
-              className="absolute bottom-10 right-10 p-3 bg-blob-f98 rounded-full"
+              className="absolute bottom-20 right-10 p-3 flex items-center justify-center text-2xl bg-blob-f98 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-blob-f98 transition duration-300 ease-in-out"
               onClick={() => fullpageApi.moveTo(1, 0)}
             >
-              Up
+              <BiUpArrow />
             </button>
           </div>
         )}
