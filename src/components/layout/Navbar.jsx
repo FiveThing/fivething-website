@@ -8,7 +8,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="w-full fixed top-0 z-50">
       <div className="flex items-center justify-between p-5 mx-10">
         <Logo
-          className="h-24"
+          className="h-20"
           onClick={() => window.fullpage_api.moveTo(1, 0)}
         />
         <Hamburger rounded toggled={menuOpen} toggle={setMenuOpen} />
