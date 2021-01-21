@@ -41,7 +41,7 @@ function App() {
               <ContactUs />
             </div>
             <button
-              className="absolute bottom-10 right-10 p-3 bg-blob-f98 rounded-full"
+              className="absolute bottom-10 right-10 p-3 bg-blob-f98 rounded-full select-none animate-bounce"
               onClick={() => fullpageApi.moveTo(1, 0)}
             >
               Up

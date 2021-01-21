@@ -4,7 +4,7 @@ const NavigationText = ({ navText }) => {
   return (
     <div className="text-center text-2xl w-48">
       <ul
-        className="hover:text-blob-f98 transition ease-in-out cursor-pointer"
+        className="hover:text-blob-f98 transition ease-in-out cursor-pointer select-none"
         onClick={() => window.fullpage_api.moveSectionDown()}
       >
         {navText.split("").map((letter) => (
