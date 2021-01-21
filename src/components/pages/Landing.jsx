@@ -1,14 +1,12 @@
 import "../../index.css";
 
-import { ReactComponent as BlobsLanding } from "../../assets/img/blobs-landing.svg";
+import BlobsLanding from "../../assets/img/blobs-landing.svg";
 import { ReactComponent as Logo } from "../../assets/img/Alt-f4-New-Logo.svg";
 import { BsChevronCompactDown } from "react-icons/bs";
 
 const Landing = () => {
   return (
     <div className="h-screen flex relative items-center">
-      <BlobsLanding className="absolute right-0 bottom-0 h-full w-2/4" />
-
       <div className="mx-60 space-y-3.5">
         <div className="flex items-center text-8xl">
           <Logo className="transform scale-90" />
@@ -22,6 +20,12 @@ const Landing = () => {
           </p>
         </div>
       </div>
+
+      <img
+        className="absolute right-0 bottom-0 h-full"
+        src={BlobsLanding}
+        alt="BlobsLnading"
+      />
       <BsChevronCompactDown
         className="z-10 absolute bottom-20 right-0 left-0 m-auto text-4xl animate-bounce hover:text-blob-f98 transition ease-in-out "
         onClick={() => window.fullpage_api.moveSectionDown()}
