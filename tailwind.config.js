@@ -182,6 +182,7 @@ module.exports = {
     },
     fontFamily: {
       jura: ["Jura", "sans-serif"],
+      majorMono: ["Major Mono Display", "monospace"],
       sans: [
         "ui-sans-serif",
         "system-ui",
