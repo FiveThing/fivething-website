@@ -18,7 +18,7 @@ const Team = () => {
       <img 
         className="absolute bottom-0 w-1/3 left-64"
         src={BlobsMini}
-        alt="BlobsTeam"
+        alt="BlobsMini"
       />
 
     </div>
