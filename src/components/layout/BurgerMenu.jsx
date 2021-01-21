@@ -20,7 +20,6 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     },
     leave: {
       opacity: 0,
-      transitionDelay: ".1s",
       transform: "translate3d(-100vw,0,0)",
     },
     config: config.gentle,
@@ -38,7 +37,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
                 {links.map((link) => {
                   return (
                     <li
-                      className="m-5 hover:text-blob-f98"
+                      className="m-5 hover:text-blob-f98 transition duration-300 ease-in-out"
                       onClick={() =>
                         window.fullpage_api.moveTo(links.indexOf(link) + 1, 0)
                       }
