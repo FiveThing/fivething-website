@@ -1,6 +1,7 @@
 import React from "react";
 import NavigationText from "../layout/NavigationText";
 import WebsiteMonitor from "../../assets/img/mock-up.png";
+import { ReactComponent as DotGrid } from "../../assets/img/DotGrid.svg";
 
 const Projects = () => {
   return (
@@ -18,7 +19,7 @@ const Projects = () => {
         <p className="text-2xl text-blob-ff7 hover:text-blob-ff9 cursor-pointer">View Project</p>
       </div>
 
-
+      <DotGrid className="absolute bottom-20 left-14" />
     </div>
   );
 };
