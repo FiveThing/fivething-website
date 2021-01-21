@@ -7,7 +7,7 @@ import NavigationText from "../layout/NavigationText";
 
 const Landing = () => {
   return (
-    <div className="h-screen flex relative items-center">
+    <div className="h-screen flex relative items-center select-none">
       <NavigationText navText={"HOME"} />
 
       <div className="mx-20 space-y-3.5 cursor-default">
