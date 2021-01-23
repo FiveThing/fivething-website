@@ -11,13 +11,11 @@ const Projects = () => {
       <NavigationText navText={"PROJECTS"} />
 
       <div className="font-jura font-bold flex-1 flex justify-center items-center">
-        <div className="flex-col">
+        <div className="space-y-5 flex-col flex">
           <p className="text-5xl">Our Website</p>
-          <p className="text-2xl text-blob-f98   hover:text-blob-ff9 cursor-pointer flex items-center">
-            <a href="https://github.com/ALT-FOUR/alt-f4-website">
-              View Project
-            </a>{" "}
-            <BiRightArrow className="ml-2" />
+          <p className="text-2xl text-blob-f98 hover:text-blob-ff9 cursor-pointer flex items-center">
+             <a href="https://github.com/ALT-FOUR/alt-f4-website" target="_blank">View Project</a>
+            <BiRightArrow className="ml-1.5 -mb-0.5"/>
           </p>
         </div>
       </div>
