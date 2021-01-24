@@ -44,7 +44,7 @@ function App() {
               <ContactUs />
             </div>
             <button
-    className="absolute bottom-10 right-14 p-3 flex items-center justify-center text-2xl bg-blob-f98 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-blob-f98 transition duration-300 ease-in-out select-none animate-bounce"
+              className="absolute bottom-10 right-14 p-3 flex items-center justify-center text-2xl bg-blob-f98 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-blob-f98 transition duration-300 ease-in-out select-none animate-bounce"
               onClick={() => fullpageApi.moveTo(1, 0)}
             >
               <BiUpArrow />

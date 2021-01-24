@@ -3,12 +3,11 @@ import React from "react";
 import BlobsTeam from "../../assets/img/blobs-team.svg";
 import NavigationText from "../layout/NavigationText";
 import BlobsMini from "../../assets/img/blobsmini-team.svg";
-import { ReactComponent as DotGrid } from "../../assets/img/DotGrid.svg";
 
 const Team = () => {
   return (
     <div className="h-screen flex items-center">
-      <NavigationText navText={"TEAM"} />
+      <NavigationText navText="TEAM" />
 
       <img
         className="h-full absolute right-0"
@@ -21,7 +20,6 @@ const Team = () => {
         src={BlobsMini}
         alt="BlobsMini"
       />
-      <DotGrid className="absolute bottom-20 left-14" />
     </div>
   );
 };

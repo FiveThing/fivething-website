@@ -1,7 +1,6 @@
 import "../../index.css";
 
 import BlobsLanding from "../../assets/img/blobs-landing.svg";
-import { ReactComponent as DotGrid } from "../../assets/img/DotGrid.svg";
 import { ReactComponent as Logo } from "../../assets/img/Alt-f4-New-Logo.svg";
 import { BsChevronCompactDown } from "react-icons/bs";
 import NavigationText from "../layout/NavigationText";
@@ -9,7 +8,7 @@ import NavigationText from "../layout/NavigationText";
 const Landing = () => {
   return (
     <div className="h-screen flex relative items-center select-none">
-      <NavigationText navText={"HOME"} />
+      <NavigationText navText="HOME" />
 
       <div className="mx-20 space-y-3.5 cursor-default">
         <div className="flex items-center text-8xl">
@@ -30,8 +29,6 @@ const Landing = () => {
         src={BlobsLanding}
         alt="BlobsLanding"
       />
-
-      <DotGrid className="absolute bottom-20 left-14" />
 
       <BsChevronCompactDown
         className="z-10 absolute bottom-20 right-0 left-0 m-auto text-4xl animate-bounce hover:text-blob-f98 transition ease-in-out cursor-pointer"
