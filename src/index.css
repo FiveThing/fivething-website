@@ -11,3 +11,10 @@ html {
 html::-webkit-scrollbar {
   width: 0px; /* For Chrome, Safari, and Opera */
 }
+
+.Team {
+  background-image: url("./assets/img/blobs-team.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

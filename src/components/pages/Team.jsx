@@ -1,25 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 
-import BlobsTeam from "../../assets/img/blobs-team.svg";
 import NavigationText from "../layout/NavigationText";
-import BlobsMini from "../../assets/img/blobsmini-team.svg";
+import TeamCard from "../layout/TeamCard";
+
+// import Andrei from "../../assets/img/andrei.JPG";
+// import Glendell from "../../assets/img/glendell.png";
+// import Raven from "../../assets/img/raven.jpg";
+
+// const imageLinks = [Andrei, Glendell, Raven, Glendell];
+import { TeamDetails } from "../layout/TeamDetails";
 
 const Team = () => {
+  const [showDetails, setShowDetails] = useState({});
+
   return (
-    <div className="h-screen flex items-center">
+    <div className="Team h-screen flex items-center">
       <NavigationText navText="TEAM" />
 
-      <img
-        className="h-full absolute right-0"
-        src={BlobsTeam}
-        alt="BlobsTeam"
-      />
+      <div className="flex w-full">
+        <div
+          className="flex flex-1 items-center mx-10"
+          style={{ height: "32rem" }}
+        >
+          {TeamDetails.map((team) => (
+            <TeamCard
+              key={team.id}
+              image={team.photo}
+              onClickCapture={() => setShowDetails(team.details)}
+            />
+          ))}
+        </div>
 
-      <img
-        className="absolute bottom-0 w-1/3 left-64"
-        src={BlobsMini}
-        alt="BlobsMini"
-      />
+        <div className="z-50 flex-1 flex flex-col justify-center items-center mx-10 mb-20 p-10">
+          <h1 className="text-3xl">{showDetails.name}</h1>
+          <p>{showDetails.role}</p>
+          {showDetails.links === undefined ? (
+            <p className="text-4xl p-5 ml-10">
+              We are start up web developers providing services for your desired
+              web design
+            </p>
+          ) : (
+            <div className="flex text-2xl">
+              {showDetails.links.map((link) => (
+                <div className="m-1" key={link.id}>
+                  <a href={`${link.socmed}`}>{link.logo}</a>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
