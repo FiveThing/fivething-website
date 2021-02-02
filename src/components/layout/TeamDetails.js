@@ -1,6 +1,7 @@
 import andreiPhoto from "../../assets/img/andrei.JPG";
 import glendellPhoto from "../../assets/img/glendell.png";
 import ravenPhoto from "../../assets/img/raven.jpg";
+import patPhoto from "../../assets/img/pat.jpg";
 
 import { SiFacebook, SiGithub, SiLinkedin } from "react-icons/si";
 
@@ -78,7 +79,7 @@ export const TeamDetails = [
   },
   {
     id: 4,
-    photo: ravenPhoto,
+    photo: patPhoto,
     details: {
       name: "Patricia Candedeir",
       role: "UI/UX Designer",
