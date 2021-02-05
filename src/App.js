@@ -13,13 +13,14 @@ import BurgerMenu from "./components/layout/BurgerMenu";
 import { BiUpArrow } from "react-icons/bi";
 
 import "./index.css";
+import "./assets/css/navigation.css";
 
 function App() {
   const [isMenuOpen, setisMenuOpen] = useState(false);
 
   return (
     <div
-      className="App relative max-h-screen"
+      className="App relative"
       style={{
         overflow: isMenuOpen ? "hidden" : null,
       }}
@@ -29,22 +30,27 @@ function App() {
       <ReactFullpage
         className="z-0"
         scrollOverflow={true}
+        navigation={true}
+        navigationPosition="left"
+        navigationTooltips={["Home", "Projects", "Team", "Contact Us"]}
+        showActiveTooltip={true}
+        responsiveWidth="1024"
         render={({ state, fullpageApi }) => (
           <div id="fullpage-wrapper">
-            <div className="section">
+            <div className="section fp-auto-width-responsive">
               <Landing />
-            </div>
-            <div className="section">
-              <Team />
             </div>
             <div className="section">
               <Projects />
             </div>
             <div className="section">
+              <Team />
+            </div>
+            <div className="section">
               <ContactUs />
             </div>
             <button
-              className="absolute bottom-10 right-14 p-3 flex items-center justify-center text-2xl bg-blob-f98 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-blob-f98 transition duration-300 ease-in-out select-none animate-bounce"
+              className="absolute bottom-10 right-14 p-3 flex items-center justify-center text-2xl bg-pallete-ff9 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-pallete-ff9 transition duration-300 ease-in-out select-none animate-bounce"
               onClick={() => fullpageApi.moveTo(1, 0)}
             >
               <BiUpArrow />

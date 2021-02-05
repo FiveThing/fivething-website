@@ -1,18 +1,18 @@
 import React from "react";
-import NavigationText from "../layout/NavigationText";
 import WebsiteMonitor from "../../assets/img/mock-up.png";
+import { ReactComponent as BlobsProject } from "../../assets/img/Blobs-Project.svg";
 
 import { BiRightArrow } from "react-icons/bi";
 
 const Projects = () => {
   return (
-    <div className="h-screen flex items-center select-none">
-      <NavigationText navText="PROJECTS" />
-
-      <div className="font-jura font-bold flex-1 flex justify-center items-center">
-        <div className="space-y-5 flex-col flex">
-          <p className="text-5xl">Our Website</p>
-          <p className="text-2xl text-blob-f98 hover:text-blob-ff9 cursor-pointer flex items-center">
+    <div className="h-full container mx-auto flex items-center">
+      <div className="w-full flex flex-wrap flex-col xl:flex-row items-center">
+        <div className="z-10 flex-1 md:space-y-5 flex-col mx-10 mt-10">
+          <p className="font-majorMono text-4xl sm:text-7xl md:text-8xl lg:text-9xl">
+            OUR WEBSITE
+          </p>
+          <div className="ml-0 md:ml-5 text-md  md:text-2xl hover:text-pallete-ff9 cursor-pointer flex items-center">
             <a
               href="https://github.com/ALT-FOUR/alt-f4-website"
               target="_blank"
@@ -21,14 +21,17 @@ const Projects = () => {
               View Project
             </a>
             <BiRightArrow className="ml-1.5 -mb-0.5" />
-          </p>
+          </div>
         </div>
-      </div>
 
-      <div className="flex-2" />
-
-      <div className="flex-1 flex justify-start items-center">
-        <img className="w-5/6" src={WebsiteMonitor} alt="WebsiteMonitor" />
+        <div className="flex flex-1 relative justify-center items-center w-5/6">
+          <img
+            className="absolute w-5/6"
+            src={WebsiteMonitor}
+            alt="WebsiteMonitor"
+          />
+          <BlobsProject className="w-full h-full" />
+        </div>
       </div>
     </div>
   );

@@ -1,54 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-import NavigationText from "../layout/NavigationText";
 import TeamCard from "../layout/TeamCard";
 
-// import Andrei from "../../assets/img/andrei.JPG";
-// import Glendell from "../../assets/img/glendell.png";
-// import Raven from "../../assets/img/raven.jpg";
-
-// const imageLinks = [Andrei, Glendell, Raven, Glendell];
-import { TeamDetails } from "../layout/TeamDetails";
-
 const Team = () => {
-  const [showDetails, setShowDetails] = useState({});
-
   return (
-    <div className="Team h-screen flex items-center">
-      <NavigationText navText="TEAM" />
+    <div className="h-4/5 xl:h-full container mx-auto flex flex-col items-center justify-center ">
+      <h1 className="font-majorMono text-4xl sm:text-7xl md:text-8xl xl:text-9xl p-10 mb-5 lg:p-0 lg:mb-0 flex-2 xl:flex-1 flex items-center">
+        OUR TEAM
+      </h1>
 
-      <div className="flex w-full">
-        <div
-          className="flex flex-1 items-center mx-10"
-          style={{ height: "32rem" }}
-        >
-          {TeamDetails.map((team) => (
-            <TeamCard
-              key={team.id}
-              image={team.photo}
-              onClickCapture={() => setShowDetails(team.details)}
-            />
-          ))}
-        </div>
-
-        <div className="z-50 flex-1 flex flex-col justify-center items-center mx-10 mb-20 p-10">
-          <h1 className="text-3xl">{showDetails.name}</h1>
-          <p>{showDetails.role}</p>
-          {showDetails.links === undefined ? (
-            <p className="text-4xl p-5 ml-10">
-              We are start up web developers providing services for your desired
-              web design
-            </p>
-          ) : (
-            <div className="flex text-2xl">
-              {showDetails.links.map((link) => (
-                <div className="m-1" key={link.id}>
-                  <a href={`${link.socmed}`}>{link.logo}</a>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+      <div className="flex-1">
+        <TeamCard />
       </div>
     </div>
   );

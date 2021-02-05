@@ -1,7 +1,7 @@
-import andreiPhoto from "../../assets/img/andrei.JPG";
-import glendellPhoto from "../../assets/img/glendell.png";
-import ravenPhoto from "../../assets/img/raven.jpg";
-import patPhoto from "../../assets/img/pat.jpg";
+import andreiPhoto from "../../assets/img/Andrei-Photo.png";
+import glendellPhoto from "../../assets/img/Glendell-Photo.png";
+import ravenPhoto from "../../assets/img/Raven-Photo.png";
+import patPhoto from "../../assets/img/Pat-Photo.png";
 
 import { SiFacebook, SiGithub, SiLinkedin } from "react-icons/si";
 

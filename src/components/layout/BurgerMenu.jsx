@@ -33,11 +33,11 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
         ({ item, key, props }) =>
           item && (
             <animated.div key={key} style={props}>
-              <ul className="h-full bg-trueGray-800 cursor-pointer flex flex-col justify-center text-7xl p-0 m-0 list-none overflow-hidden text-center">
+              <ul className="h-full bg-pallete-base cursor-pointer flex flex-col justify-center text-5xl lg:text-7xl p-0 m-0 list-none overflow-hidden text-center">
                 {links.map((link) => {
                   return (
                     <li
-                      className="m-5 hover:text-blob-f98 transition duration-300 ease-in-out"
+                      className="m-5 hover:text-pallete-ff9 transition duration-300 ease-in-out"
                       onClick={() =>
                         window.fullpage_api.moveTo(links.indexOf(link) + 1, 0)
                       }

@@ -7,11 +7,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundColor: (theme) => ({
+        ...theme("colors"),
+      }),
       colors: {
-        blob: {
+        pallete: {
           ff9: "#FF9B21",
-          ff7: "#FF7E5F",
-          f98: "#F9813A",
+          base: "#151618",
         },
       },
     },
