@@ -37,7 +37,7 @@ function App() {
         responsiveWidth="1024"
         render={({ state, fullpageApi }) => (
           <div id="fullpage-wrapper">
-            <div className="section fp-auto-width-responsive">
+            <div className="section fp-auto-width-responsivesudo s">
               <Landing />
             </div>
             <div className="section">

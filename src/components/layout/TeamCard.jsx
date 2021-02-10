@@ -4,7 +4,7 @@ import { TeamDetails } from "./TeamDetails";
 
 const TeamCard = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-40">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-40 md:gap-38">
       {TeamDetails.map((team) => (
         <div key={team.id} className="relative">
           <div className="flex items-center justify-center">

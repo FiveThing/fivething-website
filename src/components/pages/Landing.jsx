@@ -5,10 +5,10 @@ import { ReactComponent as HomeUndraw } from "../../assets/img/Home-undraw.svg";
 const Landing = () => {
   return (
     <div className="h-screen container mx-auto flex relative items-center justify-center md:justify-start">
-      <div className="mx-10 md:mx-20 space-y-3.5 z-50">
-        <p className="font-majorMono text-5xl sm:text-7xl md:text-9xl ">
+      <div className="mx-10 md:mx-28 space-y-3.5 z-50">
+        <h1 className="font-majorMono text-5xl sm:text-7xl md:text-9xl ">
           HELLO,
-        </p>
+        </h1>
         <p className="font-jura text-sm sm:text-2xl">
           We are Student Developers from
           <br />
