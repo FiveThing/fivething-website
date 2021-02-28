@@ -19,12 +19,7 @@ function App() {
   const [isMenuOpen, setisMenuOpen] = useState(false);
 
   return (
-    <div
-      className="App relative"
-      style={{
-        overflow: isMenuOpen ? "hidden" : null,
-      }}
-    >
+    <div className="App relative">
       <Navbar menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
       <BurgerMenu menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
       <ReactFullpage
@@ -32,12 +27,12 @@ function App() {
         scrollOverflow={true}
         navigation={true}
         navigationPosition="left"
-        navigationTooltips={["Home", "Projects", "Team", "Contact Us"]}
+        navigationTooltips={["01", "02", "03", "04"]}
         showActiveTooltip={true}
         responsiveWidth="1024"
         render={({ state, fullpageApi }) => (
           <div id="fullpage-wrapper">
-            <div className="section fp-auto-width-responsivesudo s">
+            <div className="section fp-auto-width-responsive">
               <Landing />
             </div>
             <div className="section">

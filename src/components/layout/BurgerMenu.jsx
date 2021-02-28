@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
 
 const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
@@ -11,7 +11,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
       zIndex: "40",
       opacity: 1,
       transform: "translate3d(0,0,0)",
-      position: "absolute",
+      position: "fixed",
       maxHeight: "100vh",
       top: 0,
       bottom: 0,
@@ -25,7 +25,18 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     config: config.gentle,
   });
 
-  const links = ["HOME", "TEAM", "PROJECTS", "CONTACT US"];
+  useEffect(() => {
+    if (menuOpen) {
+      window.fullpage_api.setAllowScrolling(false);
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      window.fullpage_api.setAllowScrolling(true);
+      document.body.style.overflow = "unset";
+    };
+  }, [menuOpen]);
+
+  const links = ["HOME", "PROJECTS", "TEAM", "CONTACT US"];
 
   return (
     <div>
@@ -33,7 +44,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
         ({ item, key, props }) =>
           item && (
             <animated.div key={key} style={props}>
-              <ul className="h-full bg-pallete-base cursor-pointer flex flex-col justify-center text-5xl lg:text-7xl p-0 m-0 list-none overflow-hidden text-center">
+              <ul className="h-full bg-pallete-base cursor-pointer flex flex-col justify-center items-center text-5xl lg:text-7xl p-0 m-0 list-none overflow-hidden">
                 {links.map((link) => {
                   return (
                     <li
