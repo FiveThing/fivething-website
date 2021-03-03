@@ -17,7 +17,6 @@ import "./assets/css/navigation.css";
 
 function App() {
   const [isMenuOpen, setisMenuOpen] = useState(false);
-
   return (
     <div className="App relative">
       <Navbar menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
@@ -32,7 +31,7 @@ function App() {
         responsiveWidth="1024"
         render={({ state, fullpageApi }) => (
           <div id="fullpage-wrapper">
-            <div className="section fp-auto-width-responsive">
+            <div className="section">
               <Landing />
             </div>
             <div className="section">
@@ -45,7 +44,7 @@ function App() {
               <ContactUs />
             </div>
             <button
-              className="absolute bottom-10 right-14 p-3 flex items-center justify-center text-2xl bg-pallete-ff9 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-pallete-ff9 transition duration-300 ease-in-out select-none animate-bounce"
+              className="absolute bottom-5 right-5 md:bottom-10 md:right-14 p-3 flex items-center justify-center text-2xl bg-pallete-ff9 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-pallete-ff9 transition duration-300 ease-in-out select-none animate-bounce"
               onClick={() => fullpageApi.moveTo(1, 0)}
             >
               <BiUpArrow />
