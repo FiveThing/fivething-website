@@ -11,6 +11,7 @@ import Team from "./components/pages/Team";
 import BurgerMenu from "./components/layout/BurgerMenu";
 
 import { BiUpArrow } from "react-icons/bi";
+import { ToastProvider } from "react-toast-notifications";
 
 import "./index.css";
 import "./assets/css/navigation.css";
@@ -41,7 +42,9 @@ function App() {
               <Team />
             </div>
             <div className="section">
-              <ContactUs />
+              <ToastProvider>
+                <ContactUs />
+              </ToastProvider>
             </div>
             <button
               className="absolute bottom-5 right-5 md:bottom-10 md:right-14 p-3 flex items-center justify-center text-2xl bg-pallete-ff9 h-14 w-14 rounded-full focus:outline-none hover:bg-white hover:text-pallete-ff9 transition duration-300 ease-in-out select-none animate-bounce"
