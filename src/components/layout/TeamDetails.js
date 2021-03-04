@@ -11,7 +11,7 @@ export const TeamDetails = [
     photo: andreiPhoto,
     details: {
       name: "Andrei Zabala",
-      role: "Back-end Developer",
+      role: "Back End Developer",
       links: [
         {
           id: 1,
@@ -31,7 +31,7 @@ export const TeamDetails = [
     photo: glendellPhoto,
     details: {
       name: "Glendell Bringino",
-      role: "Front-end Developer",
+      role: "Full Stack Developer",
       links: [
         {
           id: 1,
