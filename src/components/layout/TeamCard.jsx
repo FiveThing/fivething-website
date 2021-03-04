@@ -4,11 +4,11 @@ import { TeamDetails } from "./TeamDetails";
 
 const TeamCard = () => {
   return (
-    <div className="h-80 place-items-end grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-24 xl:gap-12 md:gap-20">
+    <div className="h-80 place-items-end grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16 xl:gap-12 md:gap-20">
       {TeamDetails.map((team) => (
         <div key={team.id} className="relative">
-          <div className="flex flex-col items-center justify-center">
-            <div className="z-10 h-28 lg:h-32 xl:h-40 absolute -top-20 md:-top-14 lg:-top-16 xl:-top-20">
+          <div className="flex justify-center">
+            <div className="z-10 h-28 lg:h-32 xl:h-40 absolute -top-12 md:-top-14 lg:-top-16 xl:-top-20">
               <img
                 className="rounded-full h-full border-8 border-trueGray-800"
                 src={team.photo}
