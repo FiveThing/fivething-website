@@ -9,22 +9,68 @@ import ContactUsUndraw from "../../assets/img/Contactus-undraw.svg";
 import Input from "../layout/Input";
 
 import emailjs from "emailjs-com";
+import { useToasts } from "react-toast-notifications";
 
 const ContactUs = () => {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data, e) => {
+  const { addToast } = useToasts();
+  const { register, handleSubmit } = useForm({
+    defaultValues: {
+      Name: "",
+      Subject: "",
+      Email: "",
+      Message: "",
+    },
+  });
+
+  const onSubmit = async (data, e) => {
     e.preventDefault();
     const userID = process.env.REACT_APP_EMAILJS_USER_ID;
     const tempID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const srvcID = process.env.REACT_APP_SERVICE_ID;
-    emailjs.sendForm(srvcID, tempID, e.target, userID).then(
-      (res) => {
-        alert("Success");
-      },
-      (err) => {
-        alert("Failed");
+    try {
+      await emailjs.sendForm(srvcID, tempID, e.target, userID);
+      addToast("Email successfully sent", {
+        appearance: "success",
+        autoDismiss: true,
+      });
+      e.target.reset();
+    } catch (error) {
+      addToast("Email failed to send", {
+        appearance: "error",
+        autoDismiss: true,
+      });
+    }
+  };
+
+  const onErrors = async (errors) => {
+    try {
+      if (errors.Name) {
+        addToast(errors.Name.message, {
+          appearance: "error",
+          autoDismiss: true,
+        });
       }
-    );
+      if (errors.Subject) {
+        addToast(errors.Subject.message, {
+          appearance: "error",
+          autoDismiss: true,
+        });
+      }
+      if (errors.Message) {
+        addToast(errors.Message.message, {
+          appearance: "error",
+          autoDismiss: true,
+        });
+      }
+      if (errors.Email || errors.Email.type === "pattern") {
+        addToast("Invalid Email", {
+          appearance: "error",
+          autoDismiss: true,
+        });
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -34,23 +80,36 @@ const ContactUs = () => {
           START A PROJECT WITH US
         </h1>
         <div className="flex flex-col">
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit, onErrors)}>
             <div className="flex flex-col md:flex-row">
-              <Input name="Name" placeholder="Your name" reg={register} />
+              <Input
+                name="Name"
+                placeholder="Your name"
+                reg={register({ required: "Enter a name" })}
+              />
               <Input
                 name="Subject"
                 placeholder="Enter a subject"
-                reg={register}
+                reg={register({ required: "Enter a subject" })}
               />
             </div>
-            <Input name="Email" placeholder="Your email" reg={register} />
+            <Input
+              name="Email"
+              placeholder="Your email"
+              reg={register({
+                required: "Invalid email",
+                pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+              })}
+            />
             <div className="m-2">
               <label htmlFor="Message">
                 <p className="text-sm sm:text-2xl">Message</p>
                 <textarea
                   className="w-full h-24 py-2 bg-transparent border-b-2 border-white  focus:outline-none focus:border-pallete-ff9"
                   name="Message"
-                  ref={register}
+                  ref={register({
+                    required: "Enter a message",
+                  })}
                 ></textarea>
               </label>
             </div>
