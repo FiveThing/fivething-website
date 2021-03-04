@@ -9,7 +9,7 @@ const Team = () => {
         OUR TEAM
       </h1>
 
-      <div className="my-40">
+      <div className="mt-40 mb-40 xl:mb-0">
         <TeamCard />
       </div>
     </div>
