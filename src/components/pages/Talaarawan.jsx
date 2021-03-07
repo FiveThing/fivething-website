@@ -8,7 +8,7 @@ const Talaarawan = () => {
   return (
     <div className="h-full container mx-auto py-10 flex flex-col items-center lg:flex-row lg:py-0">
       <div className="flex flex-2 flex-col mx-3 py-5 space-y-4 md:mx-10 md:py-10 lg:flex-1 lg:justify-center lg:mx-auto lg:ml-28 xl:mx-10 ">
-        <h1 className=" text-pallete-fb8 text-3xl font-bold tracking-widest md:text-5xl">
+        <h1 className=" font-righteous text-pallete-fb8 text-3xl tracking-widest md:text-5xl">
           TALAARAWAN
         </h1>
         <p className="leading-relaxed md:text-2xl">
