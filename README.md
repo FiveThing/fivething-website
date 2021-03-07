@@ -1,4 +1,6 @@
-![Atl F4 Landing Page](https://github.com/ALT-FOUR/alt-f4-website/blob/main/src/assets/img/Landing-Page.png)
+![Atl F4 Landing Page](https://github.com/FiveThing/fivething-website/blob/main/src/assets/img/WebsiteMonitor.png)
+## Link
+https://fivething.github.io/fivething-website/
 
 ## Building from Source 🏗️
 1. **Fork the repository**
