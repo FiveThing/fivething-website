@@ -1,10 +1,9 @@
 import React from "react";
 
+import Background from "../../assets/img/ContactusBG.png";
+
 import { BiRightArrow } from "react-icons/bi";
 import { useForm } from "react-hook-form";
-
-import { ReactComponent as BlobsContactUs } from "../../assets/img/Blobs-ContactUs.svg";
-import ContactUsUndraw from "../../assets/img/Contactus-undraw.svg";
 
 import Input from "../layout/Input";
 
@@ -71,65 +70,66 @@ const ContactUs = () => {
     } catch (err) {
       console.log(err);
     }
+    console.log(errors);
   };
 
   return (
-    <div className="h-full container mx-auto relative flex items-center">
-      <div className="mx-10 md:mx-28 space-y-7 z-50">
-        <h1 className="font-majorMono text-3xl sm:text-4xl md:text-5xl">
-          START A PROJECT WITH US
-        </h1>
-        <div className="flex flex-col">
+    <div className="h-screen container mx-auto flex flex-col items-center justify-center md:pt-0">
+      <div className="w-full flex flex-row md:px-5">
+        <div className="flex-1 mx-auto my-auto px-5">
+          <h1 className="text-pallete-fb8 text-xl text-center mb-20 mx-10 md:text-3xl md:mx-20 lg:text-5xl">
+            We would love to hear your thoughts
+          </h1>
           <form onSubmit={handleSubmit(onSubmit, onErrors)}>
-            <div className="flex flex-col md:flex-row">
-              <Input
-                name="Name"
-                placeholder="Your name"
-                reg={register({ required: "Enter a name" })}
-              />
-              <Input
-                name="Subject"
-                placeholder="Enter a subject"
-                reg={register({ required: "Enter a subject" })}
-              />
-            </div>
-            <Input
-              name="Email"
-              placeholder="Your email"
-              reg={register({
-                required: "Invalid email",
-                pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-              })}
-            />
             <div className="m-2">
+              <div className="flex flex-col md:flex-row">
+                <Input
+                  name="Name"
+                  placeholder="Your name"
+                  reg={register({ required: "Enter a name" })}
+                />
+                <Input
+                  name="Subject"
+                  placeholder="Enter a subject"
+                  reg={register({ required: "Enter a subject" })}
+                />
+              </div>
+              <Input
+                name="Email"
+                placeholder="Your email"
+                reg={register({
+                  required: "Invalid email",
+                  pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+                })}
+              />
+
               <label htmlFor="Message">
                 <p className="text-sm sm:text-2xl">Message</p>
                 <textarea
-                  className="w-full h-24 py-2 bg-transparent border-b-2 border-white  focus:outline-none focus:border-pallete-ff9"
+                  className="w-full h-40 py-2 bg-transparent border-b-2 border-gray-400  focus:outline-none focus:border-pallete-fb8 resize-none"
                   name="Message"
+                  placeholder="Your message"
                   ref={register({
                     required: "Enter a message",
                   })}
                 ></textarea>
               </label>
+
+              <button
+                className="mt-3 text-md  md:text-2xl hover:text-pallete-fb8 cursor-pointer flex items-center"
+                type="submit"
+              >
+                Submit
+                <BiRightArrow className="ml-1.5 -mb-0.5" />
+              </button>
             </div>
-            <button
-              className="m-2 text-md  md:text-2xl hover:text-pallete-ff9 cursor-pointer flex items-center"
-              type="submit"
-            >
-              Submit
-              <BiRightArrow className="ml-1.5 -mb-0.5" />
-            </button>
           </form>
         </div>
-      </div>
 
-      <BlobsContactUs className="hidden xl:block absolute -right-40 top-50%" />
-      <img
-        className="hidden xl:block  z-10 absolute top-50% -right-40"
-        src={ContactUsUndraw}
-        alt="Contact Us Undraw"
-      />
+        <div className="flex-1 hidden lg:block">
+          <img src={Background} alt="contactusBG" className="rounded-r-lg" />
+        </div>
+      </div>
     </div>
   );
 };
