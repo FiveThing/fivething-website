@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 
@@ -27,17 +27,6 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     },
     config: config.gentle,
   });
-
-  useEffect(() => {
-    if (menuOpen && window.fullpage_api === !undefined) {
-      window.fullpage_api.setAllowScrolling(false);
-      document.body.style.overflow = "hidden";
-    }
-    return () => {
-      window.fullpage_api.setAllowScrolling(true);
-      document.body.style.overflow = "unset";
-    };
-  }, [menuOpen]);
 
   const links = [
     {
@@ -82,7 +71,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
             >
               <div className="container mx-auto flex justify-between">
                 <div className="mx-auto text-left">
-                  <ul className="cursor-pointer text-5xl lg:text-7xl space-y-5">
+                  <ul className="cursor-pointer text-3xl md:text-5xl lg:text-7xl space-y-5 font-righteous">
                     {links.map((link) => (
                       <li
                         className="hover:text-pallete-ff9"
@@ -95,7 +84,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
                   </ul>
                 </div>
                 <div className="mx-auto text-right">
-                  <ul className="cursor-pointer space-y-3 font-bold">
+                  <ul className="cursor-pointer space-y-3 text-sm md:text-lg lg:text-xl font-righteous">
                     {socialMedia.map((link) => (
                       <li
                         className="hover:text-pallete-ff9"

@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className="h-screen container mx-auto flex relative items-center justify-center md:justify-start">
       <div className="mx-auto md:mx-28 space-y-3.5 z-50">
-        <h1 className="font-majorMono text-6xl sm:text-7xl md:text-9xl ">
+        <h1 className="font-righteous tracking-widest text-6xl sm:text-7xl md:text-9xl ">
           HELLO,
         </h1>
         <p className="text-sm sm:text-2xl">

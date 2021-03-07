@@ -9,7 +9,7 @@ const ContactUsSection = () => {
   return (
     <div className="h-full bg-pallete-fb8 flex items-center justify-center">
       <div className="z-10 flex flex-col space-y-3 items-center mx-3 md:mx-10 lg:mx-20">
-        <h1 className="text-3xl font-bold text-center md:text-5xl lg:text-6xl">
+        <h1 className="text-3xl font-righteous tracking-widest text-center md:text-5xl lg:text-6xl">
           Let's collaborate our minds!
         </h1>
         <p className="text-center md:text-2xl md:px-10">

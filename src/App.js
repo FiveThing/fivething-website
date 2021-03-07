@@ -13,6 +13,7 @@ import "./index.css";
 
 function App() {
   const [isMenuOpen, setisMenuOpen] = useState(false);
+
   return (
     <BrowserRouter>
       <ToastProvider>
@@ -22,7 +23,9 @@ function App() {
               <Navbar menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
               <BurgerMenu menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
 
-              <Route path="/" exact component={Home} />
+              <Route path="/" exact>
+                <Home isMenuOpen={isMenuOpen} />
+              </Route>
               <Route path="/contactus" component={ContactUsPage} />
               <Route path="/about" component={Team} />
             </div>

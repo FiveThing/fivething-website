@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -13,7 +13,17 @@ import { BiUpArrow } from "react-icons/bi";
 
 import "../../assets/css/navigation.css";
 
-const Home = () => {
+const Home = ({ isMenuOpen }) => {
+  useEffect(() => {
+    if (isMenuOpen) {
+      window.fullpage_api.setAllowScrolling(false);
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      window.fullpage_api.setAllowScrolling(false);
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
   return (
     <ReactFullpage
       className="z-0"

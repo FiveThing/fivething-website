@@ -185,8 +185,8 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
-      jura: ["Jura", "sans-serif"],
-      majorMono: ["Major Mono Display", "monospace"],
+      nunito: ["Nunito", "sans-serif"],
+      righteous: ["Righteous", "cursive"],
       sans: [
         "ui-sans-serif",
         "system-ui",
