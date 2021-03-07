@@ -6,8 +6,12 @@
   left: 3rem !important;
 }
 
+#fp-nav ul li .fp-tooltip.fp-left {
+  left: 10px !important;
+}
+
 #fp-nav ul {
-  height: 12rem !important;
+  height: 15rem !important;
   width: auto !important;
   display: flex !important;
   flex-direction: column !important;
@@ -26,7 +30,7 @@
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
   height: 3rem !important;
-  width: 0.5rem !important;
+  width: 0.2rem !important;
   margin: 0 !important;
   border-radius: 0 !important;
   background: #f9813a !important;
@@ -40,7 +44,7 @@
 .fp-slidesNav ul li a span {
   border-radius: 0 !important;
   height: 3rem !important;
-  width: 0.5rem !important;
+  width: 0.2rem !important;
   background: rgb(255, 255, 255) !important;
   margin: 0 !important;
 }

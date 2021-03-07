@@ -9,7 +9,7 @@ const Landing = () => {
         <h1 className="font-majorMono text-6xl sm:text-7xl md:text-9xl ">
           HELLO,
         </h1>
-        <p className="font-jura text-sm sm:text-2xl">
+        <p className="text-sm sm:text-2xl">
           We are Student Developers from
           <br />
           Polytechnic University of the Philippines

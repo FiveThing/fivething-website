@@ -1,34 +1,15 @@
-import andreiPhoto from "../../assets/img/Andrei-Photo.png";
-import glendellPhoto from "../../assets/img/Glendell-Photo.png";
-import ravenPhoto from "../../assets/img/Raven-Photo.png";
-import patPhoto from "../../assets/img/Pat-Photo.png";
-
 import { SiFacebook, SiGithub, SiLinkedin } from "react-icons/si";
+
+import AndreiPhoto from "../../assets/img/AndreiPhoto.png";
+import GlendellPhoto from "../../assets/img/GlendellPhoto.png";
+import JinnielPhoto from "../../assets/img/JinnielPhoto.png";
+import PatPhoto from "../../assets/img/PatPhoto.png";
+import RavenPhoto from "../../assets/img/RavenPhoto.png";
 
 export const TeamDetails = [
   {
     id: 1,
-    photo: andreiPhoto,
-    details: {
-      name: "Andrei Zabala",
-      role: "Back End Developer",
-      links: [
-        {
-          id: 1,
-          socmed: "https://www.facebook.com/l03e1t3az",
-          logo: <SiFacebook />,
-        },
-        {
-          id: 2,
-          socmed: "https://github.com/Andreizabala",
-          logo: <SiGithub />,
-        },
-      ],
-    },
-  },
-  {
-    id: 2,
-    photo: glendellPhoto,
+    photo: GlendellPhoto,
     details: {
       name: "Glendell Bringino",
       role: "Full Stack Developer",
@@ -52,8 +33,33 @@ export const TeamDetails = [
     },
   },
   {
+    id: 2,
+    photo: JinnielPhoto,
+    details: {
+      name: "Jinniel Bautista",
+      role: "Back End Developer",
+      links: [
+        {
+          id: 1,
+          socmed: "https://www.facebook.com/jinniel.bautista",
+          logo: <SiFacebook />,
+        },
+        {
+          id: 2,
+          socmed: "https://github.com/jinnielqtqt",
+          logo: <SiGithub />,
+        },
+        {
+          id: 3,
+          socmed: "linkedin.com/in/jinniel-bautista-8bb6a6207",
+          logo: <SiLinkedin />,
+        },
+      ],
+    },
+  },
+  {
     id: 3,
-    photo: ravenPhoto,
+    photo: RavenPhoto,
     details: {
       name: "Raven Lantin",
       role: "UI/UX Designer",
@@ -79,7 +85,7 @@ export const TeamDetails = [
   },
   {
     id: 4,
-    photo: patPhoto,
+    photo: PatPhoto,
     details: {
       name: "Patricia Candedeir",
       role: "UI/UX Designer",
@@ -92,6 +98,26 @@ export const TeamDetails = [
         {
           id: 2,
           socmed: "https://github.com/REESEE-Alt4",
+          logo: <SiGithub />,
+        },
+      ],
+    },
+  },
+  {
+    id: 5,
+    photo: AndreiPhoto,
+    details: {
+      name: "Andrei Zabala",
+      role: "Back End Developer",
+      links: [
+        {
+          id: 1,
+          socmed: "https://www.facebook.com/l03e1t3az",
+          logo: <SiFacebook />,
+        },
+        {
+          id: 2,
+          socmed: "https://github.com/Andreizabala",
           logo: <SiGithub />,
         },
       ],

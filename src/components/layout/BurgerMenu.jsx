@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+
+import { Link } from "react-router-dom";
+
 import { useTransition, animated, config } from "react-spring";
 
 const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
@@ -26,7 +29,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
   });
 
   useEffect(() => {
-    if (menuOpen) {
+    if (menuOpen && window.fullpage_api === !undefined) {
       window.fullpage_api.setAllowScrolling(false);
       document.body.style.overflow = "hidden";
     }
@@ -36,29 +39,75 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     };
   }, [menuOpen]);
 
-  const links = ["HOME", "PROJECTS", "TEAM", "CONTACT US"];
+  const links = [
+    {
+      id: 1,
+      name: "HOME",
+      path: "/",
+    },
+    {
+      id: 2,
+      name: "CONTACT",
+      path: "/contactus",
+    },
+    {
+      id: 3,
+      name: "ABOUT",
+      path: "/about",
+    },
+  ];
+
+  const socialMedia = [
+    {
+      id: 1,
+      name: "FACEBOOK",
+      path: "",
+    },
+    {
+      id: 2,
+      name: "GITHUB",
+      path: "",
+    },
+  ];
 
   return (
     <div>
       {fullscreenMenu.map(
         ({ item, key, props }) =>
           item && (
-            <animated.div key={key} style={props}>
-              <ul className="h-full bg-pallete-base cursor-pointer flex flex-col justify-center items-center text-5xl lg:text-7xl p-0 m-0 list-none overflow-hidden">
-                {links.map((link) => {
-                  return (
-                    <li
-                      className="m-5 hover:text-pallete-ff9 transition duration-300 ease-in-out"
-                      onClick={() =>
-                        window.fullpage_api.moveTo(links.indexOf(link) + 1, 0)
-                      }
-                      onClickCapture={() => setMenuOpen(false)}
-                    >
-                      {link}
-                    </li>
-                  );
-                })}
-              </ul>
+            <animated.div
+              key={key}
+              style={props}
+              className="h-full bg-pallete-base flex items-center"
+            >
+              <div className="container mx-auto flex justify-between">
+                <div className="mx-auto text-left">
+                  <ul className="cursor-pointer text-5xl lg:text-7xl space-y-5">
+                    {links.map((link) => (
+                      <li
+                        className="hover:text-pallete-ff9"
+                        key={link.id}
+                        onClickCapture={() => setMenuOpen(false)}
+                      >
+                        <Link to={link.path}>{link.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mx-auto text-right">
+                  <ul className="cursor-pointer space-y-3 font-bold">
+                    {socialMedia.map((link) => (
+                      <li
+                        className="hover:text-pallete-ff9"
+                        key={link.id}
+                        onClickCapture={() => setMenuOpen(false)}
+                      >
+                        <a href={link.path}>{link.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </animated.div>
           )
       )}

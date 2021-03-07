@@ -13,6 +13,8 @@ module.exports = {
       colors: {
         pallete: {
           ff9: "#FF9B21",
+          fb8: "#75CFB8",
+          ffb: "#FFB8B8",
           base: "#151618",
         },
       },
