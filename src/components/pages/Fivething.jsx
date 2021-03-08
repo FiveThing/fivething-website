@@ -7,7 +7,7 @@ import { BiRightArrow } from "react-icons/bi";
 const Fivething = () => {
   return (
     <div className="h-full container mx-auto py-10 md:py-20 flex flex-col items-center lg:flex-row lg:py-0">
-      <div className="flex flex-2 flex-col mx-3 py-5 space-y-4 md:mx-10 md:py-10 lg:flex-1 lg:justify-center lg:mx-auto lg:ml-28 xl:mx-10 ">
+      <div className="flex flex-2 flex-col mx-3 py-5 space-y-4 md:mx-10 md:py-10 lg:flex-1 lg:justify-center lg:mx-28 xl:mx-24 2xl:mx-16 ">
         <h1 className=" font-righteous text-pallete-fb8 text-3xl tracking-widest md:text-5xl">
           FIVETHING
         </h1>
@@ -15,7 +15,7 @@ const Fivething = () => {
           Our very own start-up website portfolio that provides services for the
           clients desired web design and development
         </p>
-        <button className="flex flex-row items-center space-x-1 hover:text-pallete-fb8 md:text-xl">
+        <button className="flex flex-row items-center space-x-1 focus:outline-none hover:text-pallete-fb8 md:text-xl">
           <p>View Project</p> <BiRightArrow />
         </button>
       </div>

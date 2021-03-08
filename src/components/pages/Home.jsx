@@ -8,6 +8,7 @@ import Fivething from "./Fivething";
 import Talaarawan from "./Talaarawan";
 import ContactUsSection from "./ContactUsSection";
 import AboutSection from "./AboutSection";
+import Services from "./Services";
 
 import { BiUpArrow } from "react-icons/bi";
 
@@ -38,7 +39,9 @@ const Home = ({ isMenuOpen }) => {
           <div className="section">
             <Landing />
           </div>
-          <div className="section">Services</div>
+          <div className="section">
+            <Services />
+          </div>
           <div className="section">
             <Fivething />
           </div>
@@ -52,7 +55,7 @@ const Home = ({ isMenuOpen }) => {
             <AboutSection />
           </div>
           <button
-            className="absolute bottom-5 right-5 md:bottom-10 md:right-14 p-3 flex items-center justify-center text-2xl focus:outline-none animate-bounce"
+            className="absolute bottom-5 right-5 md:bottom-10 md:right-10 p-3 flex items-center justify-center text-2xl focus:outline-none animate-bounce"
             onClick={() => fullpageApi.moveTo(1, 0)}
           >
             <BiUpArrow />
