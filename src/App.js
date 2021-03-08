@@ -26,8 +26,11 @@ function App() {
               <Route path="/fivething-website" exact>
                 <Home isMenuOpen={isMenuOpen} />
               </Route>
-              <Route path="/contactus" component={ContactUsPage} />
-              <Route path="/about" component={Team} />
+              <Route
+                path="/fivething-website/contactus"
+                component={ContactUsPage}
+              />
+              <Route path="/fivething-website/about" component={Team} />
             </div>
           </Fragment>
         </Switch>
