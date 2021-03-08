@@ -32,7 +32,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     {
       id: 1,
       name: "HOME",
-      path: "/fivething-website",
+      path: "/",
     },
     {
       id: 2,
