@@ -20,7 +20,7 @@ const Home = ({ isMenuOpen }) => {
       document.body.style.overflow = "hidden";
     }
     return () => {
-      window.fullpage_api.setAllowScrolling(false);
+      window.fullpage_api.setAllowScrolling(true);
       document.body.style.overflow = "unset";
     };
   }, [isMenuOpen]);
