@@ -27,7 +27,8 @@ const Home = ({ isMenuOpen }) => {
   return (
     <ReactFullpage
       className="z-0"
-      scrollingSpeed={1200}
+      scrollingSpeed={1000}
+      keyboardScrolling={true}
       scrollOverflow={true}
       navigation={true}
       navigationPosition="left"
