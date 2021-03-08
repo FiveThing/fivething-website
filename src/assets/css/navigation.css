@@ -7,11 +7,11 @@
 }
 
 #fp-nav ul li .fp-tooltip.fp-left {
-  left: 10px !important;
+  left: 15px !important;
 }
 
 #fp-nav ul {
-  height: 15rem !important;
+  height: 20rem !important;
   width: auto !important;
   display: flex !important;
   flex-direction: column !important;
@@ -29,7 +29,7 @@
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-  height: 3rem !important;
+  height: 4rem !important;
   width: 0.2rem !important;
   margin: 0 !important;
   border-radius: 0 !important;
@@ -40,7 +40,7 @@
 }
 
 #fp-nav ul li .fp-tooltip {
-  top: 80% !important;
+  top: 90% !important;
   transition: all 1s ease-in-out !important;
   transform: scaleY(1) !important;
 }
@@ -48,7 +48,7 @@
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   border-radius: 0 !important;
-  height: 3rem !important;
+  height: 4rem !important;
   width: 0.2rem !important;
   background: rgb(255, 255, 255) !important;
   margin: 0 !important;
