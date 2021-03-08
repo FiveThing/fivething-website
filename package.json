@@ -1,6 +1,6 @@
 {
   "name": "fivething-website",
-  "homepage": "https://fivething.github.io/",
+  "homepage": "https://fivething.github.io/fivething-website/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

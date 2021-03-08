@@ -15,7 +15,7 @@ function App() {
   const [isMenuOpen, setisMenuOpen] = useState(false);
 
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <ToastProvider>
         <Switch>
           <Fragment>
