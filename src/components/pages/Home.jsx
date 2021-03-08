@@ -52,7 +52,7 @@ const Home = ({ isMenuOpen }) => {
             <AboutSection />
           </div>
           <button
-            className="absolute bottom-5 right-5 md:bottom-10 md:right-14 p-3 flex items-center justify-center text-2xl focus:outline-none animate-bounce"
+            className="absolute bottom-5 right-5 md:bottom-10 md:right-10 p-3 flex items-center justify-center text-2xl focus:outline-none animate-bounce"
             onClick={() => fullpageApi.moveTo(1, 0)}
           >
             <BiUpArrow />
