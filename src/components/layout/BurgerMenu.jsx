@@ -32,17 +32,17 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     {
       id: 1,
       name: "HOME",
-      path: "/fivething-website",
+      path: "/",
     },
     {
       id: 2,
       name: "CONTACT",
-      path: "/fivething-website/contactus",
+      path: "/contactus",
     },
     {
       id: 3,
       name: "ABOUT",
-      path: "/fivething-website/about",
+      path: "/about",
     },
   ];
 

@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import { ToastProvider } from "react-toast-notifications";
 
@@ -15,7 +15,7 @@ function App() {
   const [isMenuOpen, setisMenuOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <ToastProvider>
         <Switch>
           <Fragment>
@@ -23,19 +23,16 @@ function App() {
               <Navbar menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
               <BurgerMenu menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
 
-              <Route path="/fivething-website" exact>
+              <Route path="/" exact>
                 <Home isMenuOpen={isMenuOpen} />
               </Route>
-              <Route
-                path="/fivething-website/contactus"
-                component={ContactUsPage}
-              />
-              <Route path="/fivething-website/about" component={Team} />
+              <Route path="/contactus" component={ContactUsPage} />
+              <Route path="/about" component={Team} />
             </div>
           </Fragment>
         </Switch>
       </ToastProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

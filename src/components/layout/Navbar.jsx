@@ -26,7 +26,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
         {/* <Link to="/">
           <Logo className="h-12 w-auto sm:h-20" />
         </Link> */}
-        <Link to="/fivething-website">
+        <Link to="/">
           <h1 className="font-righteous text-4xl">fivething</h1>
         </Link>
         <Hamburger rounded toggled={menuOpen} toggle={setMenuOpen} />
