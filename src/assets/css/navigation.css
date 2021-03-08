@@ -34,10 +34,15 @@
   margin: 0 !important;
   border-radius: 0 !important;
   background: #f9813a !important;
+  transition: 1s ease-out !important;
+  transform: scaleY(0.5) !important;
+  transform: scaleY() !important;
 }
 
 #fp-nav ul li .fp-tooltip {
   top: 80% !important;
+  transition: all 1s ease-in-out !important;
+  transform: scaleY(1) !important;
 }
 
 #fp-nav ul li a span,
@@ -47,6 +52,7 @@
   width: 0.2rem !important;
   background: rgb(255, 255, 255) !important;
   margin: 0 !important;
+  transition: 1s ease-in !important;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
