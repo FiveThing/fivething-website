@@ -23,7 +23,7 @@ function App() {
               <Navbar menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
               <BurgerMenu menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
 
-              <Route path="/" exact>
+              <Route path="/fivething-website" exact>
                 <Home isMenuOpen={isMenuOpen} />
               </Route>
               <Route path="/contactus" component={ContactUsPage} />
