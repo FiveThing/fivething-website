@@ -55,7 +55,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     {
       id: 2,
       name: "GITHUB",
-      path: "",
+      path: "https://github.com/FiveThing",
     },
   ];
 
