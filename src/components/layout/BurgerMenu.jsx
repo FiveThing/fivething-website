@@ -50,7 +50,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     {
       id: 1,
       name: "FACEBOOK",
-      path: "",
+      path: "https://www.facebook.com/fivethingph/",
     },
     {
       id: 2,
