@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/fivething-website/static/css/main.14768b50.chunk.css",
-    "main.js": "/fivething-website/static/js/main.03168c6e.chunk.js",
-    "main.js.map": "/fivething-website/static/js/main.03168c6e.chunk.js.map",
+    "main.css": "/fivething-website/static/css/main.6588799a.chunk.css",
+    "main.js": "/fivething-website/static/js/main.5185e434.chunk.js",
+    "main.js.map": "/fivething-website/static/js/main.5185e434.chunk.js.map",
     "runtime-main.js": "/fivething-website/static/js/runtime-main.0ed4ae4b.js",
     "runtime-main.js.map": "/fivething-website/static/js/runtime-main.0ed4ae4b.js.map",
-    "static/js/2.5e87c081.chunk.js": "/fivething-website/static/js/2.5e87c081.chunk.js",
-    "static/js/2.5e87c081.chunk.js.map": "/fivething-website/static/js/2.5e87c081.chunk.js.map",
+    "static/js/2.25161df2.chunk.js": "/fivething-website/static/js/2.25161df2.chunk.js",
+    "static/js/2.25161df2.chunk.js.map": "/fivething-website/static/js/2.25161df2.chunk.js.map",
     "static/js/3.1f3f3a82.chunk.js": "/fivething-website/static/js/3.1f3f3a82.chunk.js",
     "static/js/3.1f3f3a82.chunk.js.map": "/fivething-website/static/js/3.1f3f3a82.chunk.js.map",
     "index.html": "/fivething-website/index.html",
-    "static/css/main.14768b50.chunk.css.map": "/fivething-website/static/css/main.14768b50.chunk.css.map",
-    "static/js/2.5e87c081.chunk.js.LICENSE.txt": "/fivething-website/static/js/2.5e87c081.chunk.js.LICENSE.txt",
+    "static/css/main.6588799a.chunk.css.map": "/fivething-website/static/css/main.6588799a.chunk.css.map",
+    "static/js/2.25161df2.chunk.js.LICENSE.txt": "/fivething-website/static/js/2.25161df2.chunk.js.LICENSE.txt",
     "static/media/AndreiPhoto.d15641c3.png": "/fivething-website/static/media/AndreiPhoto.d15641c3.png",
-    "static/media/Blobs-Home.dd47cfc7.svg": "/fivething-website/static/media/Blobs-Home.dd47cfc7.svg",
+    "static/media/hello.css": "/fivething-website/static/media/Water.619dfdf0.svg",
     "static/media/ContactusBG.b9c2b911.png": "/fivething-website/static/media/ContactusBG.b9c2b911.png",
     "static/media/F.c4da0d77.png": "/fivething-website/static/media/F.c4da0d77.png",
     "static/media/GlendellPhoto.fc231c90.png": "/fivething-website/static/media/GlendellPhoto.fc231c90.png",
-    "static/media/Home-undraw.f5ef91ba.svg": "/fivething-website/static/media/Home-undraw.f5ef91ba.svg",
     "static/media/JinnielPhoto.9a3d7680.png": "/fivething-website/static/media/JinnielPhoto.9a3d7680.png",
     "static/media/PatPhoto.2710d76f.png": "/fivething-website/static/media/PatPhoto.2710d76f.png",
     "static/media/RavenPhoto.f0919b65.png": "/fivething-website/static/media/RavenPhoto.f0919b65.png",
@@ -27,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0ed4ae4b.js",
-    "static/js/2.5e87c081.chunk.js",
-    "static/css/main.14768b50.chunk.css",
-    "static/js/main.03168c6e.chunk.js"
+    "static/js/2.25161df2.chunk.js",
+    "static/css/main.6588799a.chunk.css",
+    "static/js/main.5185e434.chunk.js"
   ]
 }
