@@ -1,0 +1,75 @@
+.hello {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hello::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(21, 22, 24, 0.4) 65.1%,
+    #151618 100%
+  );
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card1 {
+  height: 70%;
+  width: 100%;
+  top: 0;
+  background-image: url("../img/Mountain.svg");
+}
+
+.card2 {
+  height: 90%;
+  width: 50%;
+  left: -5%;
+  background-image: url("../img/Moon.svg");
+}
+
+.card3 {
+  height: 40%;
+  width: 100%;
+  bottom: 0px;
+  background-image: url("../img/Base.svg");
+}
+.card4 {
+  height: 40%;
+  width: 50%;
+  left: 15%;
+  bottom: 0px;
+  background-image: url("../img/Water.svg");
+}
+.card5 {
+  height: 75%;
+  width: 100%;
+  bottom: 0px;
+  background-image: url("../img/Trees.svg");
+}
+
+.card6 {
+  top: 0;
+  height: 80%;
+  width: 100%;
+  background-image: url("../img/Stars.svg");
+}

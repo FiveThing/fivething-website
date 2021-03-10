@@ -75,9 +75,9 @@ const ContactUs = () => {
 
   return (
     <div className="h-screen container mx-auto flex flex-col items-center justify-center md:pt-0">
-      <div className="w-full flex flex-row md:px-5">
+      <div className="w-full flex flex-row sm:pt-80 md:pt-0 md:px-5">
         <div className="flex-1 mx-auto my-auto px-5">
-          <h1 className="font-righteous text-pallete-fb8 text-xl text-center mb-20 mx-10 md:text-3xl md:mx-20 lg:text-5xl">
+          <h1 className="font-righteous text-pallete-fb8 text-xl text-center mb-10 mx-10 md:text-3xl md:mx-20 lg:text-5xl">
             We would love to hear your thoughts
           </h1>
           <form onSubmit={handleSubmit(onSubmit, onErrors)}>
