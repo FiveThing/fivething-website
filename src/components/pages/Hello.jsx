@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../../assets/css/hello.css";
+import { BsChevronCompactDown } from "react-icons/bs";
 
 import { useSpring, animated } from "react-spring";
 
@@ -27,6 +28,10 @@ const Hello = () => {
           <br />
           Polytechnic University of the Philippines
         </p>
+        <BsChevronCompactDown
+          className="z-10 absolute bottom-20 right-0 left-0 m-auto text-4xl animate-bounce hover:text-blob-f98 transition ease-in-out cursor-pointer"
+          onClick={() => window.fullpage_api.moveSectionDown()}
+        />
       </div>
       <animated.div
         className="card1 hidden lg:block"
