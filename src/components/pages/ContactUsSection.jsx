@@ -16,8 +16,12 @@ const ContactUsSection = () => {
           We are passionate team of designers and developers. Let's go fivething
         </p>
         <div className="flex text-2xl md:text-4xl">
-          <SiFacebook className="mx-2" />
-          <SiGithub className="mx-2" />
+          <a href="https://www.facebook.com/fivethingph/">
+            <SiFacebook className="mx-2" />
+          </a>
+          <a href="https://github.com/FiveThing">
+            <SiGithub className="mx-2" />
+          </a>
         </div>
 
         <Link to="/contactus">
