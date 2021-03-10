@@ -16,7 +16,8 @@ const Talaarawan = () => {
           clients desired web design and development
         </p>
         <button className="flex flex-row items-center space-x-1 focus:outline-none hover:text-pallete-fb8 md:text-xl">
-          <p>View Project</p> <BiRightArrow />
+          <a href="https://github.com/glendell03/talaarawan">View Project</a>
+          <BiRightArrow />
         </button>
       </div>
 
