@@ -120,6 +120,11 @@ export const TeamDetails = [
           socmed: "https://github.com/Andreizabala",
           logo: <SiGithub />,
         },
+        {
+          id: 3,
+          socmed: "https://www.linkedin.com/in/andrei-zabala-95880b180/",
+          logo: <SiLinkedin />,
+        },
       ],
     },
   },
