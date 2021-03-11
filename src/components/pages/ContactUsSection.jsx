@@ -5,14 +5,12 @@ import { Link } from "react-router-dom";
 import { BiRightArrow } from "react-icons/bi";
 import { SiFacebook, SiGithub } from "react-icons/si";
 
-import collaborate from "../../assets/img/collaborates.svg";
-
 const ContactUsSection = () => {
   return (
     <div className="h-full bg-pallete-fb8 flex items-center justify-center">
       <div className="z-10 flex flex-col space-y-3 items-center mx-3 md:mx-10 lg:mx-20">
         <h1 className="text-3xl font-righteous tracking-widest text-center md:text-5xl lg:text-6xl">
-          <img src = { collaborate }/>
+          Let's collaborate our minds!
         </h1>
         <p className="text-center md:text-2xl md:px-10">
           With a passionate team of designers and developers, let's go fivething!
