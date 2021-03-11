@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { BiRightArrow } from "react-icons/bi";
 import { SiFacebook, SiGithub } from "react-icons/si";
 
-import "../../assets/css/collaborate.css";
 import collaborate from "../../assets/img/collaborates.svg";
 
 const ContactUsSection = () => {
