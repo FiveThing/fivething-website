@@ -13,7 +13,7 @@ const ContactUsSection = () => {
           Let's collaborate our minds!
         </h1>
         <p className="text-center md:text-2xl md:px-10">
-        We are a passionate team of designers and developers. Let's go fivething
+          With a passionate team of designers and developers, let's go fivething!
         </p>
         <div className="flex text-2xl md:text-4xl">
           <a href="https://www.facebook.com/fivethingph/">
@@ -25,7 +25,7 @@ const ContactUsSection = () => {
         </div>
 
         <Link to="/contactus">
-          <button className="flex flex-row items-center space-x-1 md:text-2xl focus:outline-none">
+          <button className="flex flex-row items-center space-x-1 hover:text-pallete-ff9 md:text-2xl focus:outline-none">
             <p>Get in touch with us</p> <BiRightArrow />
           </button>
         </Link>
