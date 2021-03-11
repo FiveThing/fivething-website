@@ -22,8 +22,8 @@ const Hello = () => {
         <h1 className="font-righteous tracking-widest text-5xl md:text-7xl lg:text-8xl">
           HELLO,
         </h1>
-        <p className="text-sm sm:text-2xl">
-          We are Student Developers from
+        <p className="text-sm sm:text-2xl tracking-widest">
+          We are Student Developers from the 
           <br />
           Polytechnic University of the Philippines
         </p>
