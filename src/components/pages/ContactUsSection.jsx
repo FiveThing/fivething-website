@@ -25,7 +25,7 @@ const ContactUsSection = () => {
         </div>
 
         <Link to="/contactus">
-          <button className="flex flex-row items-center space-x-1 hover:text-pallete-base md:text-2xl focus:outline-none">
+          <button className="flex flex-row items-center space-x-1 md:text-2xl focus:outline-none">
             <p>Get in touch with us</p> <BiRightArrow />
           </button>
         </Link>
