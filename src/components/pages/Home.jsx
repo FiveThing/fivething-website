@@ -8,6 +8,7 @@ import Fivething from "./Fivething";
 import Talaarawan from "./Talaarawan";
 import ContactUsSection from "./ContactUsSection";
 import AboutSection from "./AboutSection";
+import Services from "./Services";
 
 import "../../assets/css/navigation.css";
 
@@ -46,7 +47,9 @@ const Home = ({ isMenuOpen, setGoingUp }) => {
           <div className="section">
             <Hello />
           </div>
-          <div className="section">Services</div>
+          <div className="section">
+            <Services />
+          </div>
           <div className="section">
             <Fivething />
           </div>

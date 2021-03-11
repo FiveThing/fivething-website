@@ -12,8 +12,7 @@ const Talaarawan = () => {
           TALAARAWAN
         </h1>
         <p className="leading-relaxed md:text-2xl">
-          Our very own start-up website portfolio that provides services for the
-          clients desired web design and development
+          A simple diary web application built by using PHP. It is a personal journal for your notes and thoughts. 
         </p>
         <button className="flex flex-row items-center space-x-1 focus:outline-none hover:text-pallete-fb8 md:text-xl">
           <a href="https://github.com/glendell03/talaarawan">View Project</a>
