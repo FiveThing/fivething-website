@@ -13,7 +13,7 @@ const ContactUsSection = () => {
           Let's collaborate our minds!
         </h1>
         <p className="text-center md:text-2xl md:px-10">
-          We are passionate team of designers and developers. Let's go fivething
+        We are a passionate team of designers and developers. Let's go fivething
         </p>
         <div className="flex text-2xl md:text-4xl">
           <a href="https://www.facebook.com/fivethingph/">
