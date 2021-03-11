@@ -1,0 +1,15 @@
+@media (orientation: landscape) {
+  @media (min-width: 1024px) {
+    .mt-24 {
+      margin-top: 0rem /* 96px */;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  @media (min-width: 768px) {
+    .mt-24 {
+      margin-top: 0rem /* 96px */;
+    }
+  }
+}
