@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-import Landing from "./Landing";
+import Hello from "./Hello";
 import Fivething from "./Fivething";
 import Talaarawan from "./Talaarawan";
 import ContactUsSection from "./ContactUsSection";
@@ -21,13 +21,15 @@ const Home = ({ isMenuOpen }) => {
       document.body.style.overflow = "hidden";
     }
     return () => {
-      window.fullpage_api.setAllowScrolling(false);
+      window.fullpage_api.setAllowScrolling(true);
       document.body.style.overflow = "unset";
     };
   }, [isMenuOpen]);
   return (
     <ReactFullpage
       className="z-0"
+      scrollingSpeed={1000}
+      keyboardScrolling={true}
       scrollOverflow={true}
       navigation={true}
       navigationPosition="left"
@@ -37,7 +39,7 @@ const Home = ({ isMenuOpen }) => {
       render={({ state, fullpageApi }) => (
         <div id="fullpage-wrapper">
           <div className="section">
-            <Landing />
+            <Hello />
           </div>
           <div className="section">
             <Services />
