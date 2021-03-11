@@ -8,11 +8,13 @@ import ContactUsPage from "./components/pages/ContactUs";
 import BurgerMenu from "./components/layout/BurgerMenu";
 import Home from "./components/pages/Home";
 import Team from "./components/pages/Team";
+import ScrollTop from "./components/layout/ScrollTop";
 
 import "./index.css";
 
 function App() {
   const [isMenuOpen, setisMenuOpen] = useState(false);
+  const [goingUp, setGoingUp] = useState(false);
 
   return (
     <HashRouter>
@@ -24,7 +26,10 @@ function App() {
               <BurgerMenu menuOpen={isMenuOpen} setMenuOpen={setisMenuOpen} />
 
               <Route path="/" exact>
-                <Home isMenuOpen={isMenuOpen} />
+                <ScrollTop goingUp={goingUp} />
+                <Route path="/" exact>
+                  <Home isMenuOpen={isMenuOpen} setGoingUp={setGoingUp} />
+                </Route>
               </Route>
               <Route path="/contactus" component={ContactUsPage} />
               <Route path="/about" component={Team} />
