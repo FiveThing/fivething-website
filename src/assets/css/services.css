@@ -7,3 +7,49 @@
   border-radius: 30px;
 }
 
+.card .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 400px;
+  height: 550px;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.card .liquid::after,
+.card .liquid::before {
+  content: "";
+  width: 300%;
+  height: 250%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: rgba(196, 196, 196, 0.2);
+}
+
+.card .liquid::before {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 8s linear infinite;
+}
+
+.card .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+.card:hover .liquid {
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
