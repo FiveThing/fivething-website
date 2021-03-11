@@ -23,7 +23,7 @@ const Services = () => {
           <RiRocketLine className="text-5xl flex-1" />
         </ServicesCard>
 
-        <ServicesCard text={"UI/UX"} bgPallete={"bg-pallete-ffb"}>
+        <ServicesCard text={"UI/UX Design"} bgPallete={"bg-pallete-ffb"}>
           <FaMountain className="text-5xl flex-1" />
         </ServicesCard>
       </div>
