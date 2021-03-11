@@ -10,11 +10,9 @@ import ContactUsSection from "./ContactUsSection";
 import AboutSection from "./AboutSection";
 import Services from "./Services";
 
-import { BiUpArrow } from "react-icons/bi";
-
 import "../../assets/css/navigation.css";
 
-const Home = ({ isMenuOpen }) => {
+const Home = ({ isMenuOpen, setGoingUp }) => {
   useEffect(() => {
     if (isMenuOpen) {
       window.fullpage_api.setAllowScrolling(false);
@@ -25,6 +23,7 @@ const Home = ({ isMenuOpen }) => {
       document.body.style.overflow = "unset";
     };
   }, [isMenuOpen]);
+
   return (
     <ReactFullpage
       className="z-0"
@@ -36,6 +35,13 @@ const Home = ({ isMenuOpen }) => {
       navigationTooltips={["01", "02", "03", "04", "05", "06"]}
       showActiveTooltip={true}
       responsiveWidth="1024"
+      afterLoad={(origin, destination, direction) => {
+        if (destination.index > 0) {
+          setGoingUp(true);
+        } else {
+          setGoingUp(false);
+        }
+      }}
       render={({ state, fullpageApi }) => (
         <div id="fullpage-wrapper">
           <div className="section">
@@ -56,12 +62,6 @@ const Home = ({ isMenuOpen }) => {
           <div className="section">
             <AboutSection />
           </div>
-          <button
-            className="absolute bottom-5 right-5 md:bottom-10 md:right-10 p-3 flex items-center justify-center text-2xl focus:outline-none animate-bounce"
-            onClick={() => fullpageApi.moveTo(1, 0)}
-          >
-            <BiUpArrow />
-          </button>
         </div>
       )}
     />
