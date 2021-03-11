@@ -17,7 +17,7 @@ const Talaarawan = () => {
             journal for your notes and thoughts.
           </p>
           <button className="flex flex-row items-center space-x-1 focus:outline-none hover:text-pallete-fb8 md:text-xl">
-            <a href="https://github.com/glendell03/talaarawan">View Projectsssssssss</a>
+            <a href="https://github.com/glendell03/talaarawan">View Projects</a>
             <BiRightArrow />
           </button>
         </div>
