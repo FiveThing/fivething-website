@@ -1,5 +1,6 @@
 import React from "react";
 
+import "../../assets/css/contactus.css";
 import Background from "../../assets/img/ContactusBG.png";
 
 import { BiRightArrow } from "react-icons/bi";
@@ -74,8 +75,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="h-screen container mx-auto flex flex-col items-center justify-center md:pt-0">
-      <div className="w-full flex flex-row pt-24 md:pt-0 md:px-5">
+    <div className="h-full lg:h-screen container mx-auto flex flex-col items-center justify-center md:pt-0">
+      <div className="w-full flex flex-row mt-24 md:px-8">
         <div className="flex-1 mx-auto my-auto px-5">
           <h1 className="font-righteous text-pallete-fb8 text-xl text-center pb-5 mx-10 md:text-3xl md:mx-12">
             We would love to hear your thoughts
@@ -126,8 +127,12 @@ const ContactUs = () => {
           </form>
         </div>
 
-        <div className="flex-1 my-auto hidden lg:block max-w-screen-sm">
-          <img src={Background} alt="contactusBG" className="rounded-r-lg" />
+        <div className="flex-2 my-auto hidden lg:block photo-container h-4/6">
+          <img
+            src={Background}
+            alt="contactusBG"
+            className="rounded-r-lg h-full"
+          />
         </div>
       </div>
     </div>
