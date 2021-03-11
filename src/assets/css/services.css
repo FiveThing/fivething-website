@@ -10,13 +10,13 @@
   }
   
   
-  /* .card span {
+.card p {
     position: relative;
     color: #fff;
     font-size: 20px;
     letter-spacing: 4px;
     z-index: 1;
-  } */
+  } 
   
   .card .liquid {
     position: absolute;

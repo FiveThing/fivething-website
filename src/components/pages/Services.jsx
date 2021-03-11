@@ -17,12 +17,12 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-2 gap-24 text-center">
                 <div className="card">
-                    <RiRocketLine/>
-                    <p className="">Website</p>
+                    <RiRocketLine className=""/>
+                    <p>Website</p>
                     <div className="liquid bg-pallete-fb8"></div>
                 </div>
                 <div className="card">
-                    <span>UI/UX Design</span>
+                    <p>UI/UX Design</p>
                     <div className="liquid bg-pallete-ffb"></div>
                 </div>
             </div>
