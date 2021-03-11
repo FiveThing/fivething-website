@@ -24,17 +24,6 @@ const Fivething = () => {
           </button>
         </div>
 
-<<<<<<< HEAD
-      <div className="relative flex-1 flex items-center justify-center">
-        <div className="flex items-center justify-center h-4/5 w-4/5">
-          <div className="flex items-end justify-center">
-            <img src={F} alt="F" className="h-full lg:h-auto" />
-            <img
-              src={WebsiteMonitor}
-              alt="Website Monitor"
-              className="absolute"
-            />
-=======
         <div className="relative flex-1 flex items-center justify-center">
           <div className=" flex items-center justify-center h-4/6 w-4/6">
             <div className="flex items-end justify-center">
@@ -45,7 +34,6 @@ const Fivething = () => {
                 className="absolute"
               />
             </div>
->>>>>>> upstream/main
           </div>
         </div>
       </div>
