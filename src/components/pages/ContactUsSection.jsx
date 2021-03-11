@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { BiRightArrow } from "react-icons/bi";
-import { SiFacebook, SiGithub } from "react-icons/si";
+import { SiFacebook, SiGithub, SiInstagram } from "react-icons/si";
 
 const ContactUsSection = () => {
   return (
@@ -13,11 +13,15 @@ const ContactUsSection = () => {
           Let's collaborate our minds!
         </h1>
         <p className="text-center md:text-2xl md:px-10">
-          With a passionate team of designers and developers, let's go fivething!
+          With a passionate team of designers and developers, let's go
+          fivething!
         </p>
         <div className="flex text-2xl md:text-4xl">
           <a href="https://www.facebook.com/fivethingph/">
             <SiFacebook className="mx-2" />
+          </a>
+          <a href="https://www.instagram.com/fivethingph/">
+            <SiInstagram className="mx-2" />
           </a>
           <a href="https://github.com/FiveThing">
             <SiGithub className="mx-2" />

@@ -54,6 +54,11 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
     },
     {
       id: 2,
+      name: "INSTAGRAM",
+      path: "https://www.instagram.com/fivethingph/",
+    },
+    {
+      id: 3,
       name: "GITHUB",
       path: "https://github.com/FiveThing",
     },
