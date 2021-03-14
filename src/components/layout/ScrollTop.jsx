@@ -17,7 +17,8 @@ const ScrollTop = ({ goingUp }) => {
   const slides = useTransition(goingUp, null, {
     from: {
       opacity: 0,
-      transform: "translate3d(120px, 0, 0)",
+      position: "absolute",
+      transform: "translate3d(100px, 0, 0)",
     },
     enter: {
       opacity: 1,
@@ -25,7 +26,23 @@ const ScrollTop = ({ goingUp }) => {
     },
     leave: {
       opacity: 0,
-      transform: "translate3d(-120px, 0, 0)",
+      transform: "translate3d(100px, 0, 0)",
+    },
+  });
+
+  const slides2 = useTransition(!goingUp, null, {
+    from: {
+      opacity: 0,
+      position: "absolute",
+      transform: "translate3d(100px, 0, 0)",
+    },
+    enter: {
+      opacity: 1,
+      transform: "translate3d(0px,0,0)",
+    },
+    leave: {
+      opacity: 0,
+      transform: "translate3d(100px, 0, 0)",
     },
   });
 
@@ -48,7 +65,15 @@ const ScrollTop = ({ goingUp }) => {
         >
           <BiLeftArrow className="text-2xl" />
         </animated.div>
-        <div className="ml-5 w-40 text-base">
+        <div className=" ml-5 w-40 text-base flex items-center">
+          {slides2.map(
+            ({ item, props, key }) =>
+              item && (
+                <animated.p key={key} style={props}>
+                  Scroll Down
+                </animated.p>
+              )
+          )}
           {slides.map(
             ({ item, props, key }) =>
               item && (
